@@ -1,0 +1,160 @@
+/* Info Styles */
+.info {
+  padding: 120px 0 80px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.info .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.info-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.info-image {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.avatar-image {
+  width: 280px;
+  height: 280px;
+  border-radius: 20px;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.avatar-image:hover {
+  transform: scale(1.05);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.image-placeholder {
+  width: 280px;
+  height: 280px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  font-size: 1.1rem;
+  display: none; /* Ẩn placeholder mặc định */
+}
+
+.info-details {
+  text-align: left;
+}
+
+.info-name {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.info-title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  color: #f39c12;
+}
+
+.info-contact {
+  margin-bottom: 2rem;
+}
+
+.contact-item {
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  border-left: 4px solid #f39c12;
+}
+
+.contact-item strong {
+  color: #f39c12;
+}
+
+.info-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background: #f39c12;
+}
+
+.btn-primary:hover {
+  background: #e67e22;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid white;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: #333;
+}
+
+/* Responsive cho Info section */
+@media (max-width: 768px) {
+  .info-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .info-details {
+    text-align: center;
+  }
+
+  .info-name {
+    font-size: 2.5rem;
+  }
+
+  .info-buttons {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .avatar-image {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .image-placeholder {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .avatar-image {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .image-placeholder {
+    width: 180px;
+    height: 180px;
+  }
+}
