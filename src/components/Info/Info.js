@@ -7,28 +7,26 @@ const Info = () => {
       <div className="container">
         <div className="info-content">
           <div className="info-image">
-            {/* Thay thế placeholder bằng ảnh thật */}
+             
             <img 
               src="/images/avatar.jpg" 
               alt="Huỳnh Gia Thành"
               className="avatar-image"
             />
-            <div className="image-placeholder">
-              
-            </div>
+
           </div>
-          <div className="info-details">
+          <div className="info-details"> 
             <h1 className="info-name">Huỳnh Gia Thành</h1>
             <h2 className="info-title">Web Developer</h2>
             <div className="info-contact">
               <div className="contact-item">
-                <strong>Email:</strong> huynhgiathanh04@gmail.com
+                <strong>Email: huynhgiathanh04@gmail.com</strong> 
               </div>
               <div className="contact-item">
-                <strong>SĐT:</strong> 0919727150
+                <strong>SĐT: 0919727150</strong> 
               </div>
               <div className="contact-item">
-                <strong>Địa chỉ:</strong> Thành phố Huế
+                <strong>Địa chỉ: Thành phố Huế</strong>
               </div>
             </div>
             <div className="info-buttons">

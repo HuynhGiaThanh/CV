@@ -66,6 +66,7 @@
   font-size: 3rem;
   margin-bottom: 0.5rem;
   font-weight: bold;
+  
 }
 
 .info-title {
@@ -88,7 +89,7 @@
 }
 
 .contact-item strong {
-  color: #f39c12;
+  color: #000000;
 }
 
 .info-buttons {
